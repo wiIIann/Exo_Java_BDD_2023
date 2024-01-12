@@ -61,14 +61,14 @@
 <h2>Exercice 4 : Triangle rectangle 2</h2>
 <p>Ecrire le code afin de produire un triangle rectangle aligné sur la droite</p>
 <%
-    for(int i = x; i > 0; i--){
-       for(int j = 1; j < i; j++){
-          %>&nbsp;&nbsp;<%
-       }
-       for (int k = i; k<=x; k++){
-          out.print("*");
-       }
-       %></br><%
+    for (int i = 0; i < x; i++) {
+        for (int j = 0; j < i; j++) {
+            %>&nbsp;&nbsp;<%
+        }
+        for (int k = i; k < x; k++) {
+            out.print("*");
+        }
+        out.println("<br/>");
     }
 %>
 
