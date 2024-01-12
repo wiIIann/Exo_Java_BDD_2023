@@ -90,27 +90,30 @@
 <h2>Exercice 6 : Le demi losange</h2>
 <p>Ecrire le code afin de produire un losange</p>
 <%
-    for (int i = 0; i < x; i++) {
-        for (int j = 0; j < i; j++) {
-            %>&nbsp;&nbsp;<%
+  <%
+    for(int i = x; i > 0; i--){
+           for(int j = 1; j < i; j++){
+              %>&nbsp;&nbsp;<%
+           }
+           for (int k = i; k<=x; k++){
+              out.print("*");
+           }
+        out.println("</br>");
         }
-        for (int k = i; k < x; k++) {
-            out.print("*");
-        }
-        out.println("<br/>");
-    }
 
-    out.println("<br/>");
+        out.println("</br>");
 
-    for (int a = 0; a < x; a++) {
-        for (int z = 0; z < a; z++) {
-            %>&nbsp;&nbsp;<%
+
+        for(int a = 0; a < x; a++){
+           for (int z = 1; z < a + 1; z++){
+              %>&nbsp;&nbsp;<%
+           }
+           for(int b = x; b > a; b--){
+              out.print("*");
+           }
+            out.println("<br/>");
         }
-        for (int b = a; b < x; b++) {
-            out.print("*");
-        }
-        out.println("<br/>");
-    }
+%>
 %>
 <h2>Exercice 7 : La table de multiplication</h2>
 <p>Ecrire le code afin de créser une table de multiplication</p>
