@@ -50,11 +50,11 @@
 <h2>Exercice 3 : Triangle rectangle inversé</h2>
 <p>Ecrire le code afin de produire un triangle rectangle aligné sur la gauche</p>
 <%
-    for(int i = x; i > 0; i--){
-        for(int j = 0; j < i; j++){
+    for (int i = 0; i < x; i++) {
+        for (int j = 0; j <= i; j++) {
             out.print("*");
         }
-        %></br><%
+        out.println("<br/>");
     }
 %>
 
