@@ -29,7 +29,7 @@
 <p>Ecrire le code afin de produire un carré d'étoile</p>
 <%
     for (int i = 0; i < x; i++) {
-        for (int j = 0; j < x - i; j++) {
+        for (int j = x - i; j > 0; j--) {
             out.print("*");
         }
         out.println("<br/>");
