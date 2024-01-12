@@ -90,7 +90,6 @@
 <h2>Exercice 6 : Le demi losange</h2>
 <p>Ecrire le code afin de produire un losange</p>
 <%
-  <%
     for(int i = x; i > 0; i--){
            for(int j = 1; j < i; j++){
               %>&nbsp;&nbsp;<%
@@ -113,7 +112,6 @@
            }
             out.println("<br/>");
         }
-%>
 %>
 <h2>Exercice 7 : La table de multiplication</h2>
 <p>Ecrire le code afin de créser une table de multiplication</p>
